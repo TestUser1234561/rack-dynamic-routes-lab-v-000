@@ -14,11 +14,11 @@ class Application
       if(item.is_a? Item)
         resp.write item.price
       else
-        resp.write "Route not found"
+        resp.write "Item not found"
         resp.status = 404
       end
     else
-      resp.write "Route not found"
+      resp.write "Item not found"
       resp.status = 404
     end
 
